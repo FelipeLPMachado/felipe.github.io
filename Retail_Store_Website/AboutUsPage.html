@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ninja Store: About Us</title>
+    <link rel="stylesheet" type="text/css" href="css/about_us_styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/NinjaCode.png" alt="Ninja Store Logo">
+        <h1>ABOUT US</h1>
+        <form>
+            <select onchange="location = this.value;">
+                <optgroup label="Departments">
+                    <option value="HomePage.html">Home</option>
+                    <option value="ClothingTab.html">Clothes</option>
+                    <option value="WeaponsPage.html">Weapons</option>
+                    <option value="TechTab.html">Technology</option>
+                    <option value="TechniquePage.html">Technique</option>
+                </optgroup>
+                <optgroup label="More Pages">
+                    <option value="FaqPage.html">FAQ</option>
+                    <option value="AboutUsPage.html" selected>About Us</option>
+                    <option value="FeedbackPage.html">Feedback</option>
+                </optgroup>
+            </select>
+        </form>
+    </header>
+    <div>
+        <button onclick="redirectToAccountPage()">MY ACCOUNT</button>
+    </div>
+    <section>
+        <h2>Ninjutsu History</h2>
+        <p>
+            Ninjutsu, also known as the art of the ninja, dates back to ancient Japan.
+            It is a martial art and espionage technique that has been practiced by stealthy warriors for centuries.
+            Ninjas were skilled in various tactics, including infiltration, sabotage, and assassination.
+            The secretive nature of ninjutsu made it a powerful and enigmatic tradition in Japanese history.
+        </p>
+        <p>
+            At Ninja Store, we celebrate the rich history of ninjutsu by providing authentic ninja gear and equipment.
+            Our commitment to preserving the legacy of the ninja is at the heart of our store's mission.
+        </p>
+    </section>
+    <section>
+        <h2>Store History</h2>
+        <p>
+            Founded in 1995, Ninja Store began as a small dojo in the heart of Ninja City.
+            Over the years, we have grown into a global leader in supplying ninja enthusiasts with top-quality gear.
+            Our dedication to quality, authenticity, and customer satisfaction
+            has earned us a loyal following among ninja practitioners worldwide.
+        </p>
+        <p>
+            Today, Ninja Store stands as a symbol of excellence in the world of ninjutsu.
+            We continue to expand our product offerings, ensuring that ninjas of all levels can find the tools they need
+            to pursue their craft. Join us in embracing the legacy of the ninja!
+        </p>
+    </section>
+    <section id="contact-info">
+        <h2 class="section-title">Contact Information</h2>
+        <address>
+            <p>
+                <strong>
+                        Address: 666 Hanzo Street<br>
+                        Stealth City, Shadow State<br>
+                        NinjaLand
+                </strong>
+            </p>
+        </address>
+        <p>
+            <strong>Phone: +0 (555) 123-4567</strong><br>
+            <strong>
+                Email:
+                <a href="mailto:info@ninjastore.com">info@ninjastore.com</a>
+            </strong>
+        </p>
+    </section>
+    <div>
+        <audio autoplay loop controls>
+            <source src="assets/NinjaMusic.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <script src="scripts/about_us_script.js"></script>
+</body>
+</html>
