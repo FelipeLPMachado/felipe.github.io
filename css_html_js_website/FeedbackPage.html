@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback!</title>
+    <link rel="stylesheet" type="text/css" href="Silvaback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+   </head>
+<body>
+    <img src="coding-ninjas-logo.jpg">
+    <header>
+        <h1>Feedback!</h1>
+        <a href="HomePage.html">Home</a>
+        <a href="ClothingTab.html">Clothing</a>
+        <a href="WeaponsTab.html">Weapons</a>
+        <a href="FAQTab.html">FAQ</a>
+        <a href="AboutUsPage.html">About Us</a>
+        <a href="TechniquePage.html">Technology</a>
+        <a href="TechTab.html">Technique</a>
+        <a href="FeedbackTab.html">Feedback</a><br><br>
+    </header>
+
+    <p>How would you rate our site's quality?</p>
+    <div class="rating">
+        <script>
+            function rateStar(element) {
+                var stars = document.getElementsByClassName("star");
+                var rating = 0;
+                for (var i = 0; i < stars.length; i++) {
+                    if (i < parseInt(element.dataset.rating)) {
+                        stars[i].textContent = "★"; // Filled star
+                    } else {
+                        stars[i].textContent = "☆"; // Empty star
+                    }
+                    if (stars[i] === element) {
+                        rating = parseInt(element.dataset.rating);
+                    }
+                }
+                document.getElementById("result").textContent = "Rating: " + rating + " stars";
+            }
+        </script>
+        <span class="star" onclick="rateStar(this)" data-rating="1">☆</span>
+        <span class="star" onclick="rateStar(this)" data-rating="2">☆</span>
+        <span class="star" onclick="rateStar(this)" data-rating="3">☆</span>
+        <span class="star" onclick="rateStar(this)" data-rating="4">☆</span>
+        <span class="star" onclick="rateStar(this)" data-rating="5">☆</span>
+    </div>
+    <br><br>
+    <label><b>Tell us how we could improve our website:</b></label>
+    <br>
+<textarea id="feedbackText" onkeyup="countLetters()" cols="100" rows="10"></textarea>
+<p id="letterCount">Letter count: 0</p>
+<script>
+function countLetters() {
+   var text = document.getElementById("feedbackText").value;
+   var count = text.length;
+   document.getElementById("letterCount").innerHTML = "Letter count: " + count;
+}
+</script>
+    
+    <b><label>First Name:</label></b>
+    <input type="text" class="custom-input">
+    <br><br>
+    <b><label>Last Name:</label></b>
+    <input type="text" class="custom-input">
+    <br><br>
+    <b><label>Phone Number:</label></b>
+    <input type="text" class="custom-input">
+    <br><br>
+    <b><label>Email:</label></b>
+    <input type="text" class="custom-input">
+    <br><br><br>
+    <input type="submit" name="submission" class="submit-button" value="Submit">
+    <input type="reset" class="reset-button" name="resets" value="Reset">
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    font-family: 'Times New Roman', sans-serif;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 120px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+header img {
+    float: right;
+    width: 80px;
+    height: 80px;
+    margin: 25px;
+}
+h1 {
+    font-family: 'Georgia', sans-serif;
+    font-size: 42px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+}
+form select {
+    font-size: 16px;
+    padding: 5px;
+}
+button {
+	position: absolute;
+    top: 205px;
+    right: 40px;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #111;
+}
+.account-button {
+	position: absolute;
+    top: 210px;
+    right: 40px;
+
+}
+section {
+    margin: 20px;
+    background-color: #444;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+section h2 {
+    font-family: 'Georgia', sans-serif;
+    color: #fff;
+}
+#contact-info {
+    font-family: 'Calibri', sans-serif;
+    font-size: 90%;
+}
+.section-title {
+    font-family: 'Georgia', sans-serif;
+    font-size: 170%;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+div audio {
+    width: 10%;
+    margin-left: 20px;
+}
+div audio::-webkit-media-controls-timeline,
+div audio::-webkit-media-controls-time-remaining-display,
+div audio::-webkit-media-controls-current-time-display,
+div audio::-webkit-media-controls-mute-button {
+    display: none;
+}
+div audio::-webkit-media-controls {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+div audio::-webkit-media-controls-volume-slider {
+    height: 4px;
+    width: 50px;
+    background-color: #444;
+    border-radius: 2px;
+    margin: 0 5px;
+}
