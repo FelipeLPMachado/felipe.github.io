@@ -1,0 +1,75 @@
+header {color: red ; background-color: lightblue; ;}
+
+img {position: absolute; right: 0%; top: 40%; }
+
+
+  input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+  }
+  
+ 
+  input[type="radio"]:checked {
+    background-color: yellow;
+  }
+  
+ 
+  label {padding: 2px;
+    cursor: pointer;
+  }
+  
+
+  input[type="radio"]:hover {
+    border-color: 
+  }
+  
+  #myTextarea {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* or "none" to disable resizing */
+  }
+  
+  #myTextarea:hover {
+    border-color: black;
+  }
+  
+  #myTextarea:focus {
+    outline: none;
+    border-color: black;
+    box-shadow: 0 0 5px red;
+  }
+  
+  .reset-button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+  }
+  .submit-button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+  }
+
+  .custom-input {
+    background-color: peachpuff;
+    color: yellow;
+    padding: 1px;
+  }
+
+
+
+
+
+
